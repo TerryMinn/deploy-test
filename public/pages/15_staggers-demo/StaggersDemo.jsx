@@ -30,7 +30,7 @@ const StaggersDemo = () => {
         <img className="card card-5" src="/stagger-demo/img5.jpg" />
       </div>
 
-      <script type="module" src="./script.js"></script>
+      {/*<script type="module" src="./script.js"></script>*/}
     </main>
   );
 };

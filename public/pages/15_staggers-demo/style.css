@@ -10,14 +10,15 @@
 }
 
 .card {
-  width: 300px;
-  height: 300px;
-  border-radius: 60px;
-  object-fit: cover;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transform-origin: center center;
-  outline: 15px solid #fff;
-  margin-left: -8rem;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 60px !important;
+  object-fit: cover !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+  transform-origin: center center !important;
+  outline: 15px solid #fff !important;
+  margin-left: -8rem !important;
+  opacity: 1 !important;
 }
 
 /* Static rotations */
