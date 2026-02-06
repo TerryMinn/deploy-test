@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-geist: "Geist", sans-serif;
+}
+
+* {
+  /* Change scrollbar color to black */
+  scrollbar-color: black;
+  scrollbar-width: thin;
+}
+
+@layer base {
+  body {
+    @apply font-geist;
+  }
+
+  code {
+    @apply font-mono text-sm bg-zinc-900 text-orange-400 p-1;
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-zinc-50;
+  }
+
+  main {
+    @apply px-10 pt-10 pb-20 flex flex-col bg-[#020013] min-h-screen;
+  }
+
+  a {
+    @apply text-blue-400 hover:text-blue-500;
+  }
+}
+
+@layer components {
+  .nav {
+    @apply flex flex-row justify-between items-center gap-5 max-w-7xl w-full mx-auto;
+
+    img {
+      @apply size-10 object-contain;
+    }
+  }
+
+  .container {
+    @apply mt-20 space-y-10 max-w-7xl mx-auto;
+
+    h1 {
+      @apply text-3xl font-bold text-white text-center;
+    }
+
+    ul {
+      @apply flex flex-wrap justify-center gap-5;
+
+      li {
+        @apply w-[300px] bg-[#11142B] rounded-2xl;
+
+        img {
+          @apply w-full h-[200px] object-cover rounded-t-2xl;
+        }
+
+        div {
+          @apply p-5 space-y-2;
+
+          h3 {
+            @apply text-lg font-bold text-white;
+          }
+
+          p {
+            @apply text-[#c2cde7] text-base;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    @apply flex w-full sm:flex-row flex-col mt-20 mb-10 max-w-7xl mx-auto sm:gap-5 gap-10;
+
+    .arrow {
+      @apply flex-[1/12];
+
+      a {
+        @apply size-12 rounded-[10px] flex items-center justify-center bg-[#11142b];
+      }
+
+      img {
+        @apply size-2/5 object-contain;
+      }
+    }
+
+    section {
+      @apply flex-[11/12] flex flex-col gap-5 max-w-3xl mx-auto;
+
+      h1 {
+        @apply mb-7 text-4xl font-bold text-white;
+      }
+
+      p {
+        @apply text-[#c2cde7] text-lg font-normal leading-7 space-y-3;
+      }
+    }
+  }
+
+  .demo {
+    @apply bg-[#11142b] w-full px-10 py-20  rounded-3xl min-h-[500px] relative overflow-hidden;
+
+    .repeat {
+      @apply size-12 rounded-[10px] flex items-center justify-center bg-[#22274A] absolute top-3 right-3 z-0 cursor-pointer;
+
+      img {
+        @apply size-2/5 object-contain;
+      }
+    }
+  }
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-center-row {
+  @apply flex flex-row items-center justify-center gap-5 flex-wrap;
+}

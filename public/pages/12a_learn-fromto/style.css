@@ -1,0 +1,12 @@
+.wave-loader {
+  display: flex;
+  gap: 6px;
+}
+
+.bar {
+  width: 16px;
+  height: 80px;
+  background: linear-gradient(180deg, #00cec9, #6c5ce7);
+  border-radius: 8px;
+  opacity: 0.8;
+}

@@ -1,0 +1,30 @@
+.reactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  background: #1e1e1e;
+  padding: 16px 36px;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.reactions button {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+.reactions button:hover {
+  transform: scale(1.2);
+}
+
+.bubble {
+  position: absolute;
+  font-size: 28px;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
